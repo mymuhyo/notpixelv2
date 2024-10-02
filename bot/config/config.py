@@ -7,29 +7,29 @@ class Settings(BaseSettings):
     API_HASH: str
 
     USE_REF: bool = True
-    REF_ID: str = 'f355876562'
+    REF_ID: str = 'f1896596326'
     PERCENT_OF_REFERRALS_FOR_CREATORS_OF_THE_SOFT: int = 15
 
     USE_RANDOM_DELAY_IN_RUN: bool = True
     RANDOM_DELAY_IN_RUN: list[int] = [5, 60]
 
-    SLEEP_TIME_IN_MINUTES: list[int] = [30, 60]
+    SLEEP_TIME_IN_MINUTES: list[int] = [40, 70]
 
     ENABLE_AUTO_TASKS: bool = True
     ENABLE_AUTO_DRAW: bool = True
-    ENABLE_JOIN_TG_CHANNELS: bool = False
+    ENABLE_JOIN_TG_CHANNELS: bool = True
     ENABLE_CLAIM_REWARD: bool = True
     ENABLE_AUTO_UPGRADE: bool = True
 
     ENABLE_AUTO_JOIN_TO_SQUAD: bool = True
-    SQUAD_SLUG: str = 'notpixel_raiders'
+    SQUAD_SLUG: str = 'muhyochannel'
 
     ENABLE_AUTO_JOIN_TO_SQUAD_CHANNEL: bool = True
     ENABLE_AUTO_JOIN_SQUAD: bool = True
     SQUAD_NAME: str = ''
 
-    DRAW_RANDOM_X_DIAPOSON: list[int] = [0, 900]
-    DRAW_RANDOM_Y_DIAPOSON: list[int] = [0, 900]
+    DRAW_RANDOM_X_DIAPOSON: list[int] = [100, 900]
+    DRAW_RANDOM_Y_DIAPOSON: list[int] = [100, 900]
     DRAW_RANDOM_COLORS: list[str] = ["#000000"]
 
     ENABLE_DRAW_ART: bool = False
@@ -43,9 +43,9 @@ class Settings(BaseSettings):
 
     ENABLE_SSL: bool = False
 
-    PAINT_REWARD_MAX: int = 5 # max is 7
-    ENERGY_LIMIT_MAX: int = 5 # max is 6
-    RE_CHARGE_SPEED_MAX: int = 5 # max is 11
+    PAINT_REWARD_MAX: int = 7 # max is 7
+    ENERGY_LIMIT_MAX: int = 6 # max is 6
+    RE_CHARGE_SPEED_MAX: int = 10 # max is 11
 
     BOOSTS_BLACK_LIST: list[str] = ['invite3frens', 'INVITE_FRIENDS', 'TON_TRANSACTION', 'BOOST_CHANNEL', 'ACTIVITY_CHALLENGE', 'CONNECT_WALLET']
     TASKS_TODO_LIST: list[str] = ["x:notcoin", "x:notpixel", "paint20pixels", "leagueBonusSilver", "leagueBonusGold", "leagueBonusPlatinum", "channel:notpixel_channel", "channel:notcoin", "premium"]
@@ -54,5 +54,3 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
-
-
